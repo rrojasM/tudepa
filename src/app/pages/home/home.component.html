@@ -1,0 +1,31 @@
+<div class="main-content">
+    <nav class="left">
+        <img src="https://tudepa.com/assets/logo_header.svg" />
+        <div class="profile">
+            <img src="/assets/perfil.PNG" />
+            <span class="name">Rufino Rojas</span>
+            <a class="email" href="mailto:gufirojascouseysoft.com">gufirojascouseysoft.com</a>
+        </div>
+        <ul>
+            <li (click)="navegar('/home/dashboard')">
+                <i class="bi bi-speedometer2"></i>
+                Dashboard
+            </li>
+            <li (click)="navegar('/home/inventarios')">
+                <i class="bi bi-box"></i>
+                Inventarios
+            </li>
+            <li (click)="navegar('/home/cotizaciones')">
+                <i class="bi bi-coin"></i>
+                Cotizaciones
+            </li>
+        </ul>
+        <section class="cerrar-sesion" (click)="navegar('/')">
+            <i class="bi bi-power"></i>
+            Cerrar Sesión
+        </section>
+    </nav>
+    <div class="right">
+        <router-outlet></router-outlet>
+    </div>
+</div>

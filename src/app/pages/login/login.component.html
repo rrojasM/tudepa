@@ -1,0 +1,33 @@
+<div class="login">
+    <div class="body">
+        <img src="https://tudepa.com/assets/logo_header.svg" />
+        <div class="form">
+            <h2>Bienvenido a <span class="color-primary">tudepa.com</span></h2>
+            <h3 class="mt-lg">Inicia sesión</h3>
+            <form class="mt-md">
+                <div class="form-group">
+                    <label class="form-control-label">Correo</label>
+                    <input class="form-control" type="email" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label">Correo</label>
+                    <input class="form-control" type="email" />
+                </div>
+                <div class="mt-md">
+                    <label class="text-sm mr-md check-container">
+                        <input type="checkbox" />
+                        <span class="checkmark"></span>
+                        Recordar Sesión
+                    </label>
+                    <a class="link text-sm">¿Olvidase tu contraseña?</a>
+                </div>
+                <button class="btn mt-lg" type="button" (click)="login()">Iniciar Sesion</button>
+            </form>
+            @if (procesando) {
+            <div class="loader-container">
+                <span class="loader"></span>
+            </div>
+            }
+        </div>
+    </div>
+</div>
